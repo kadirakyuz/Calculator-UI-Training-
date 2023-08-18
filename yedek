@@ -1,0 +1,396 @@
+import React from 'react';
+import {
+  StatusBar,
+  View,
+  Text,
+  SafeAreaView,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
+
+StatusBar.setHidden(false, 'slide');
+
+const App = () => {
+  return (
+    <SafeAreaView style={styles.backDesign}>
+      <View style={styles.navBarDesign}>
+        <Text style={styles.navtextDesign}>CALCULATE</Text>
+        <Text style={styles.navtextDescription}>by SkyBullet</Text>
+      </View>
+      <View style={styles.areaDesign}>
+        <View style={styles.submitArea}></View>
+        <View style={styles.inputArea}>
+          <View style={styles.numericData1}>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>AC</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>%</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>/</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>X</Text>
+            </View>
+          </View>
+          <View style={styles.numericData1}>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>7</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>8</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>9</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>-</Text>
+            </View>
+          </View>
+          <View style={styles.numericData1}>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>4</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>5</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>6</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>+</Text>
+            </View>
+          </View>
+          <View style={styles.numericData2}>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>1</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>2</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>3</Text>
+            </View>
+          </View>
+           
+          <View style={styles.numericData2}>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>,</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>0</Text>
+            </View>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>00</Text>
+            </View>
+          </View><View style={styles.numericData3}>
+            <View style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>=</Text></View></View>
+
+
+
+
+
+
+        </View>
+      </View>
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  navtextDesign: {
+    fontSize: 18,
+    color: 'red',
+    fontWeight: '800',
+  },
+  navtextDescription: {
+    fontSize: 12,
+    color: 'red',
+    fontWeight: '400',
+  },
+  backDesign: {
+    backgroundColor: 'white',
+    flex: 1,
+  },
+  navBarDesign: {
+    backgroundColor: 'black',
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  areaDesign: {
+    backgroundColor: 'black',
+    flex: 1,
+  },
+  submitArea: {
+    backgroundColor: 'black',
+    margin: 5,
+    justifyContent: 'center',
+    flex: 0.55,
+  },
+  inputArea: {
+    backgroundColor: 'black',
+    height: 420,
+    margin: 5,
+    flex: 1,
+  },
+  numericData1: {
+    width: 'auto',
+    height: 'auto',
+    backgroundColor: 'black',
+    flexDirection: 'row',
+    flex: 1,
+    margin: 3,
+  },
+  numericData2: {
+    width: 295,
+    height: 'auto',
+    backgroundColor: 'red',
+    flexDirection: 'row',
+    flex: 1,
+    margin: 3,
+  },
+  numericData3: {
+    width: 85,
+    height: 70,
+    backgroundColor: 'black',
+    alignItems:'baseline',
+    flex: 1,
+    flexDirection:'row-reverse',
+    margin: 3,
+  },
+  inputNumeric: {
+    flex: 1,
+    backgroundColor: '#28282A',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 4,
+    borderRadius: 10,
+  },
+  textinputNumeric: {
+    fontSize: 35,
+    color: 'white',
+    alignItems: 'center',
+  },
+});
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from 'react';
+import {
+  StatusBar,
+  View,
+  Text,
+  SafeAreaView,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
+
+StatusBar.setHidden(false, 'slide');
+
+const App = () => {
+  return (
+    <SafeAreaView style={styles.backDesign}>
+      <View style={styles.navBarDesign}>
+        <Text style={styles.navtextDesign}>CALCULATE</Text>
+        <Text style={styles.navtextDescription}>by SkyBullet</Text>
+      </View>
+      <View style={styles.areaDesign}>
+        <View style={styles.submitArea}></View>
+        <View style={styles.inputArea}>
+
+
+          <View style={styles.numericData1}>
+
+
+            <TouchableOpacity style={[styles.inputNumeric, { backgroundColor: 'orange' }]}>
+            <Text style={styles.textinputNumeric }>AC</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>7</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>4</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>1</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>0</Text>          
+            </TouchableOpacity>
+
+
+          </View>
+
+          <View style={styles.numericData1}>
+
+
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>%</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>8</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>5</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>2</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>00</Text>          
+            </TouchableOpacity>
+
+
+          </View>
+
+          <View style={styles.numericData1}>
+
+
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>/</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>9</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>6</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>3</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>,</Text>          
+            </TouchableOpacity>
+
+
+          </View>
+
+          <View style={styles.numericData1}>
+
+
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>x</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>-</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.inputNumeric}>
+              <Text style={styles.textinputNumeric}>+</Text>
+            </TouchableOpacity>
+             
+            <TouchableOpacity style={styles.inputNumeric2}>
+              <Text style={styles.textinputNumeric}>=</Text>          
+            </TouchableOpacity>
+
+
+          </View>
+           
+
+
+
+
+        </View>
+      </View>
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  navtextDesign: {
+    fontSize: 18,
+    color: 'red',
+    fontWeight: '800',
+  },
+  navtextDescription: {
+    fontSize: 12,
+    color: 'red',
+    fontWeight: '400',
+  },
+  backDesign: {
+    backgroundColor: 'white',
+    flex: 1,
+  },
+  navBarDesign: {
+    backgroundColor: 'black',
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  areaDesign: {
+    backgroundColor: 'black',
+    flex: 1,
+  },
+  submitArea: {
+    backgroundColor: 'black',
+    margin: 5,
+    justifyContent: 'center',
+    flex: 0.55,
+  },
+  inputArea: {
+    backgroundColor: 'black',
+    height: 420,
+    margin: 5,
+    flex: 1,
+    flexDirection:'row'
+  },
+  numericData1: {
+    width: 100,
+    height: 'auto',
+    backgroundColor: 'black',
+    flexDirection: 'column',
+    flex: 1,
+    margin: 2,
+  },
+  numericData2: {
+    width: 100,
+    height: 'auto',
+    backgroundColor: 'black',
+    flexDirection: 'column',
+    flex: 1,
+    margin: 5,
+  },
+   
+  inputNumeric: {
+    flex: 1,
+    backgroundColor: '#28282A',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 5,
+    borderRadius: 10,
+  },
+  inputNumeric2: {
+    flex: 2.1,
+    backgroundColor: 'orange',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 5,
+    borderRadius: 10,
+  },
+  textinputNumeric: {
+    fontSize: 35,
+    color: 'white',
+    alignItems: 'center',
+  },
+});
+
+export default App;
